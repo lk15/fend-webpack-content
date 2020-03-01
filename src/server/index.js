@@ -4,7 +4,7 @@ const mockAPIResponse = require('./mockAPI.js')
 
 const app = express()
 
-app.use(express.static('src/client'))
+app.use(express.static('dist'))
 
 console.log(__dirname)
 
@@ -19,4 +19,8 @@ app.listen(8080, function () {
 
 app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
+})
+
+app.get('/', function (req, res) {
+    res.sendFile('dist/index.html')
 })
