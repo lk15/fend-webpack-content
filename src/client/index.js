@@ -5,3 +5,5 @@ console.log(checkForName);
 
 
 alert('I exist!')
+
+alert('I exist!')

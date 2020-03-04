@@ -3,6 +3,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+    mode: 'production',
     entry: path.resolve(__dirname, 'src') + '/client/index.js',
     module: {
         rules: [
